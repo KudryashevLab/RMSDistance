@@ -8,9 +8,9 @@ This repository contains the analysis scripts used for the publication “Ligand
 - **MATLAB .m script** for the multidimensional scaling.
 
 ## Requirements
-
-- UCSF ChimeraX
-- MATLAB
+- Python 3.8.10 or later
+- UCSF ChimeraX 1.8 or later
+- MATLAB R2021a or later
 - Any input files referenced by the scripts, like the model list .txt file which is provided as a reference.
 
 ## Usage
