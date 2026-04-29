@@ -1,4 +1,4 @@
-RMSDistance
+**RMSDistance**
 
 This repository contains the analysis scripts used for the publication “Ligand-induced activation of RyR1 in native membranes.” The scripts reproduce the key computational steps used in the study and are provided for transparency and reproducibility.
 
