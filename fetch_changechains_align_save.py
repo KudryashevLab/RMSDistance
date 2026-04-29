@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 fetch_changechains_align_save.py
-Batch-fetch PDB models, rename chains to reference nomenclature,
+Batch-fetch models from PDB, rename chains to reference nomenclature,
 align to reference structure, and save.
 Usage: chimerax --nogui --script fetch_changechains_align_save.py > fetch_changechains_align_save.log 2>&1
 """
@@ -9,12 +9,12 @@ Usage: chimerax --nogui --script fetch_changechains_align_save.py > fetch_change
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 
-INPUT_FILE       = "models_with_state_short.txt"   # .txt list of PDB IDs to process
-OUTPUT_DIR       = "./models"                       # where .cif files are saved
+INPUT_FILE       = "models_with_state.txt"   # .txt list of PDB IDs to process
+OUTPUT_DIR       = "./models"                       # where .cif files are saved, will be created
 REFERENCE_MODEL  = "./reference_model.cif"         # reference model for alignment
 REFERENCE_ID     = 1337                            # ChimeraX model ID for reference
 
-# Alignment residue range (Cα atoms), TMD in case of RyR1
+# Alignment residue range (Cα atoms), Pore/TMD in case of RyR1
 ALIGN_START = 4820
 ALIGN_END   = 4920
 
