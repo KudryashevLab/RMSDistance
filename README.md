@@ -20,8 +20,11 @@ Run the ChimeraX scripts in command-line / no-GUI mode using your local ChimeraX
 
 1. fetch_changechains_align_save.py
 this will fetch all the PDB models from the database, align it to the reference model and update the chain IDs to match the reference model (A,B,C,D...);
+all the modified models will be saved to the ./models
+
 run cmd example:
 chimerax --nogui --script fetch_changechains_align_save.py > fetch_changechains_align_save.log 2>&1
+
 3. universal_align_rmsd_normalized_all.py
 this will calculate the normalized RMSD pairwise for all of the provided models and for all of the provided reference and target domain combinations.
 ### MATLAB
