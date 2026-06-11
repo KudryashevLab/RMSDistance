@@ -35,33 +35,6 @@ plot(dissimilarities,distances,'bo', ...
 xlabel('Dissimilarities')
 ylabel('Distances/Disparities')
 legend({'Distances' 'Disparities'}, 'Location','NorthWest');
-%% plotting
-nr_my = 19;
-s = scatter(Y(1:end-nr_my-1,1), Y(1:end-nr_my-1,2), 40, str2double(models(1:end-nr_my-1,2)), 'filled');
-text(Y(1:end-nr_my-1,1)+0.05,Y(1:end-nr_my-1,2),models(1:end-nr_my-1,1), 'Color','blue','FontSize',20);
-s.SizeData = 1600;s.MarkerEdgeColor = 'w';s.LineWidth = 1;
-%c = colorbar('southoutside', 'Ticks', [1,2,3,4], 'TickLabels', {'Closed','Primed','Open', 'Inactivated'});c.FontSize = 40;
-%title("CSol/TMD", 'FontSize',40)
-
-%models{end-9,1} = 'primed_2' 
-%models{end-8,1} = 'primed'
-%models{end-7,1} = 'open'
-%models{end-6,1} = 'apo';
-%models{end-5,1} = 'open_ry';
-%models{end-4,1} = 'primed_1';
-%models{end-3,1} = 'open_2';
-%models{end-2,1} = 'apo_1';
-%models{end-1,1} = 'apo_2';
-%models{end,1}   = 'apo_3';
-
-hold on;
-s2 = scatter(Y(end-nr_my:end,1),Y(end-nr_my:end,2), 40, 'r', 'filled');
-text(Y(end-nr_my:end,1)+0.05,Y(end-nr_my:end,2), models(end-nr_my:end,1),'Color','blue','FontSize',20);
-s2.SizeData = 1600;s2.MarkerEdgeColor = 'w';s2.LineWidth = 1;
-
-%colormap(jet(4));
-
-%axis('equal');
 %%
 writematrix(Y,'./CSol_TMD.csv');
 %%
