@@ -6,11 +6,16 @@ This repository contains the analysis scripts used for the publication “Ligand
 
 - **ChimeraX .py scripts** for running structure-related analysis in no-GUI mode.
 - **MATLAB .m script** for the multidimensional scaling.
+- **plot_example** folder with a notebook example for scatter plots
 
 ## Requirements
 - Python 3.8.10 or later
 - UCSF ChimeraX 1.8 or later
 - MATLAB R2021a or later
+- notebook==6.5.4 or later
+- pandas==2.0.3 or later
+- starfile==0.4.12 or later
+- matplotlib==3.7.2 or later
 - Any input files referenced by the scripts, like the model list .txt file which is provided as a reference.
 
 ## Usage
@@ -31,7 +36,7 @@ this will calculate the normalized RMSD pairwise for all of the provided models 
 Open and run the MATLAB scripts in MATLAB with the required input data in place.
 3. rmsd.m
 this will take the output files from the pairwise RMSD calculation done previously, assemble it into a single distance matrix and perform a non-metric multidimensional scaling on it.
-the results can be used to create a 2D plot.
+the results can be used to create a 2D plot, as shown in the example notebook
 
 ## Notes
 
