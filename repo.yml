@@ -1,0 +1,19 @@
+name: Publish to Zenodo
+on:
+  push:
+    branches:
+      - main # or your default branch
+jobs:
+  zenodo-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      # Copy and paste your snippet below this line
+      - name: Zenodo Publish
+        uses: kykrueger/zenodo-publish@v1.0.5
+        with:
+          # Add any required variables or secrets for the action here
+          token: ${{ secrets.ZENODO_TOKEN }}
+
