@@ -30,7 +30,7 @@ all the modified models will be saved to the ./models
 run cmd example:
 chimerax --nogui --script fetch_changechains_align_save.py > fetch_changechains_align_save.log 2>&1
 
-3. universal_align_rmsd_normalized_all.py
+2. universal_align_rmsd_normalized_all.py
 this will calculate the normalized RMSD pairwise for all of the provided models and for all of the provided reference and target domain combinations.
 ### MATLAB
 Open and run the MATLAB scripts in MATLAB with the required input data in place.
