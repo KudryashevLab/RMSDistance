@@ -32,8 +32,10 @@ chimerax --nogui --script fetch_changechains_align_save.py > fetch_changechains_
 
 2. universal_align_rmsd_normalized_all.py
 this will calculate the normalized RMSD pairwise for all of the provided models and for all of the provided reference and target domain combinations.
+
 ### MATLAB
 Open and run the MATLAB scripts in MATLAB with the required input data in place.
+
 3. rmsd.m
 this will take the output files from the pairwise RMSD calculation done previously, assemble it into a single distance matrix and perform a non-metric multidimensional scaling on it.
 the results can be used to create a 2D plot, as shown in the example notebook
